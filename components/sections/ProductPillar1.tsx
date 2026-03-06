@@ -15,13 +15,13 @@ export default function ProductPillar1() {
         <div className="absolute left-[30px] top-[280px] w-[382.5px] space-y-[14px]">
           <ScrollReveal>
             <h2 className="text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
-              AIで実務体験を<span className="text-[#0891B2]">30分</span>で作成
+              AIで職種別ジョブ体験を<span className="text-[#0891B2]">自動生成</span>
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
             <p className="text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
-              入力だけで、自社の魅力が伝わるジョブ体験を自動生成。従来2ヶ月かかっていた設計を、現場の負担なく実現します。
+              入力するだけで、自社の実務に基づいたジョブチャレンジを生成。従来2ヶ月かかっていたインターン設計を30分に。
             </p>
           </ScrollReveal>
         </div>
@@ -57,13 +57,13 @@ export default function ProductPillar1() {
         <div className="px-4 pt-5 pb-3 sm:p-6 md:p-8 space-y-2 sm:space-y-4">
           <ScrollReveal>
             <h2 className="text-[16px] sm:text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
-              AIで実務体験を<span className="text-[#0891B2]">30分</span>で作成
+              AIで職種別ジョブ体験を<span className="text-[#0891B2]">自動生成</span>
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
             <p className="text-[13px] sm:text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
-              入力だけで、自社の魅力が伝わるジョブ体験を自動生成。従来2ヶ月かかっていた設計を、現場の負担なく実現します。
+              入力するだけで、自社の実務に基づいたジョブチャレンジを生成。従来2ヶ月かかっていたインターン設計を30分に。
             </p>
           </ScrollReveal>
         </div>
