@@ -14,13 +14,13 @@ export default function ProductPillar2() {
         <div className="absolute right-[30px] top-[265px] w-[382.5px] space-y-[14px]">
           <ScrollReveal>
             <h2 className="text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
-              母集団形成から内定まで<span className="text-[#0891B2]">一気通貫</span>
+              学生が<span className="text-[#0891B2]">「やってみたい」</span>と思うリアル課題
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
             <p className="text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
-              実務体験を軸に、インターンから内定後まで学生との接点を継続。志望度を高め、内定辞退を防ぎます。
+              企業の実際の業務データや意思決定をもとに、自社ならではのジョブ体験を提供。単なるワークではなく、リアルな仕事の面白さを伝えます。
             </p>
           </ScrollReveal>
         </div>
@@ -37,7 +37,7 @@ export default function ProductPillar2() {
             <div className="w-full h-full rounded-[10px] overflow-hidden relative">
               <Image
                 src="/contents/screenshots/highlight2-new.png"
-                alt="インターンから内定まで切れ目のないエンゲージメント"
+                alt="学生がやってみたいと思うリアル課題"
                 fill
                 className="object-cover"
                 sizes="840px"
@@ -53,13 +53,13 @@ export default function ProductPillar2() {
         <div className="px-4 pt-5 pb-3 sm:p-6 md:p-8 space-y-2 sm:space-y-4">
           <ScrollReveal>
             <h2 className="text-[16px] sm:text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
-              母集団形成から内定まで<span className="text-[#0891B2]">一気通貫</span>
+              学生が<span className="text-[#0891B2]">「やってみたい」</span>と思うリアル課題
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
             <p className="text-[13px] sm:text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
-              実務体験を軸に、インターンから内定後まで学生との接点を継続。志望度を高め、内定辞退を防ぎます。
+              企業の実際の業務データや意思決定をもとに、自社ならではのジョブ体験を提供。単なるワークではなく、リアルな仕事の面白さを伝えます。
             </p>
           </ScrollReveal>
         </div>
@@ -76,7 +76,7 @@ export default function ProductPillar2() {
             <div className="w-full aspect-[16/10] sm:aspect-[4/3] rounded-lg sm:rounded-[10px] overflow-hidden relative">
               <Image
                 src="/contents/screenshots/highlight2-new.png"
-                alt="インターンから内定まで切れ目のないエンゲージメント"
+                alt="学生がやってみたいと思うリアル課題"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 840px"
