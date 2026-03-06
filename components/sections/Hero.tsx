@@ -66,11 +66,14 @@ export default function Hero() {
           
           <div className="relative rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl shadow-black/20 dark:shadow-black/50 border border-border/50 bg-surface">
             <div className="overflow-hidden" style={{ marginLeft: '-6%', marginRight: '-6%', width: '112%' }}>
-              <VideoPlayer
+              <video
                 src={videoUrls.hero}
-                title="BOUND デモ動画"
-                videoClassName="w-full h-auto"
-                fallback={<YouTubeEmbed videoId="q04fcKvjre8" title="BOUND デモ動画" />}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                className="w-full h-auto"
               />
             </div>
           </div>
