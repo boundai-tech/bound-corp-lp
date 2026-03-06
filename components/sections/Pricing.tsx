@@ -32,41 +32,43 @@ export default function Pricing() {
         >
           {pricingPlans.map((plan, index) => (
             <motion.div key={index} variants={staggerItem} className="h-full">
-              <Card hover={plan.highlighted} className={`h-full min-h-[600px] flex flex-col ${plan.highlighted ? "border-[#0891B2]/40 bg-[#0891B2]/[0.02]" : "bg-surface"}`}>
-                <h3 className="text-lg md:text-xl font-normal text-foreground mb-2">{plan.name}</h3>
-                <p className="text-foreground/60 text-xs md:text-sm mb-5 md:mb-6">{plan.description}</p>
+              <Card hover={plan.highlighted} className={`h-full flex flex-col justify-between ${plan.highlighted ? "border-[#0891B2]/40 bg-[#0891B2]/[0.02]" : "bg-surface"}`}>
+                <div>
+                  <h3 className="text-lg md:text-xl font-normal text-foreground mb-1">{plan.name}</h3>
+                  <p className="text-foreground/50 text-xs md:text-sm mb-4">{plan.description}</p>
 
-                <div className="mb-2">
-                  <span className="font-mono text-2xl md:text-3xl font-medium text-foreground">{plan.price}</span>
-                  {plan.priceUnit && <span className="text-foreground/60 text-xs md:text-sm ml-1">{plan.priceUnit}</span>}
+                  <div className="mb-1">
+                    <span className="font-mono text-2xl md:text-3xl font-medium text-foreground">{plan.price}</span>
+                    {plan.priceUnit && <span className="text-foreground/50 text-xs md:text-sm ml-1">{plan.priceUnit}</span>}
+                  </div>
+                  
+                  <div className="h-4 mb-4">
+                    {plan.subPrice && (
+                      <span className="text-foreground/50 text-xs">（{plan.subPrice}）</span>
+                    )}
+                  </div>
+
+                  <ul className="space-y-2 md:space-y-2.5">
+                    {plan.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start space-x-2">
+                        {feature.included ? (
+                          <svg className="w-4 h-4 text-[#0891B2] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        ) : (
+                          <svg className="w-4 h-4 flex-shrink-0 mt-0.5 opacity-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
+                          </svg>
+                        )}
+                        <span className={`text-[11px] md:text-[12px] leading-relaxed ${feature.included ? "text-foreground/70" : "opacity-30 text-foreground"}`}>
+                          {feature.text}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                
-                <div className="h-5 md:h-6 mb-5 md:mb-6">
-                  {plan.subPrice && (
-                    <span className="text-foreground/60 text-xs">（{plan.subPrice}）</span>
-                  )}
-                </div>
 
-                <ul className="space-y-2.5 md:space-y-3 mb-6 md:mb-8 flex-grow">
-                  {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start space-x-2.5 md:space-x-3">
-                      {feature.included ? (
-                        <svg className="w-4 h-4 text-[#0891B2] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      ) : (
-                        <svg className="w-4 h-4 text-foreground/20 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
-                        </svg>
-                      )}
-                      <span className={`text-[12px] md:text-[13px] ${feature.included ? "text-foreground/80" : "text-foreground/40"}`}>
-                        {feature.text}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Button href={plan.ctaLink} variant={plan.highlighted ? "primary" : "secondary"} className={`w-full py-2.5 text-xs md:text-sm ${plan.highlighted ? "bg-foreground text-background hover:opacity-80" : ""}`}>
+                <Button href={plan.ctaLink} variant={plan.highlighted ? "primary" : "secondary"} className={`w-full py-2.5 text-xs md:text-sm mt-8 ${plan.highlighted ? "bg-foreground text-background hover:opacity-80" : ""}`}>
                   {plan.cta}
                 </Button>
               </Card>
