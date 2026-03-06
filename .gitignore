@@ -32,9 +32,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-# archived unused assets (kept locally, not in repo)
-/_archive
-
 # typescript
 *.tsbuildinfo
 next-env.d.ts

@@ -14,7 +14,7 @@ export default function ProductPillar2() {
         <div className="absolute right-[30px] top-[265px] w-[382.5px] space-y-[14px]">
           <ScrollReveal>
             <h2 className="text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
-              学生が<span className="text-[#0891B2]">「やってみたい」</span>と思うリアル課題
+              学生が<span className="text-[#0891B2]">「やってみたい」</span>と思う<br />リアル課題
             </h2>
           </ScrollReveal>
 
@@ -53,7 +53,7 @@ export default function ProductPillar2() {
         <div className="px-4 pt-5 pb-3 sm:p-6 md:p-8 space-y-2 sm:space-y-4">
           <ScrollReveal>
             <h2 className="text-[16px] sm:text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
-              学生が<span className="text-[#0891B2]">「やってみたい」</span>と思うリアル課題
+              学生が<span className="text-[#0891B2]">「やってみたい」</span>と思う<br />リアル課題
             </h2>
           </ScrollReveal>
 
@@ -65,7 +65,7 @@ export default function ProductPillar2() {
         </div>
 
         {/* Image */}
-        <div className="px-3 pb-3 sm:p-4 md:p-6">
+        <div className="p-4 md:p-6">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -73,7 +73,7 @@ export default function ProductPillar2() {
             variants={scaleIn}
             className="w-full"
           >
-            <div className="w-full aspect-[16/10] sm:aspect-[4/3] rounded-lg sm:rounded-[10px] overflow-hidden relative">
+            <div className="w-full aspect-[4/3] rounded-[10px] overflow-hidden relative">
               <Image
                 src="/contents/screenshots/highlight2-new.png"
                 alt="学生がやってみたいと思うリアル課題"

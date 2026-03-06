@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
@@ -66,13 +65,11 @@ export default function Resources() {
                     <Card className="h-full bg-surface hover:bg-foreground/[0.02] overflow-hidden p-0 transition-all duration-300">
                       {/* サムネイル画像 */}
                       <div className="relative w-full aspect-video overflow-hidden bg-foreground/5">
-                        <Image
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
                           src={resource.thumbnail}
                           alt={resource.title}
-                          fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                          sizes="(max-width: 768px) 50vw, 50vw"
-                          priority={currentIndex === 0 && index < 2}
+                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                       </div>
 

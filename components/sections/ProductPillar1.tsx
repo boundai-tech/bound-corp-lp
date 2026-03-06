@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { videoUrls } from "@/lib/config/videos";
 import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { scaleIn } from "@/components/animations/variants";
@@ -26,7 +24,7 @@ export default function ProductPillar1() {
           </ScrollReveal>
         </div>
 
-        {/* Image - Right Side */}
+        {/* Video - Right Side */}
         <div className="absolute left-[420.5px] top-[34.53px] w-[858px] h-[646px]">
           <motion.div
             initial="hidden"
@@ -38,7 +36,7 @@ export default function ProductPillar1() {
             <div className="w-full h-full rounded-[10px] overflow-hidden relative">
               <div className="absolute inset-0 -left-[80px] w-[calc(100%+80px)] h-full">
                 <video
-                  src={videoUrls.highlight1}
+                  src="/contents/screenshots/highlight1.mp4"
                   autoPlay
                   loop
                   muted
@@ -68,7 +66,7 @@ export default function ProductPillar1() {
           </ScrollReveal>
         </div>
 
-        {/* Image */}
+        {/* Video */}
         <div className="px-3 pb-3 sm:p-4 md:p-6">
           <motion.div
             initial="hidden"
@@ -79,7 +77,7 @@ export default function ProductPillar1() {
           >
             <div className="w-full aspect-[16/10] sm:aspect-[4/3] rounded-lg sm:rounded-[10px] overflow-hidden relative">
               <video
-                src={videoUrls.highlight1}
+                src="/contents/screenshots/highlight1.mp4"
                 autoPlay
                 loop
                 muted

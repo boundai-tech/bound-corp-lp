@@ -56,9 +56,9 @@ export default function Header() {
 
           <div className="hidden md:flex items-center space-x-3">
           <ThemeToggle />
-          <a href="https://boundai.tech/student" target="_blank" rel="noopener noreferrer" className="text-[13px] text-foreground/80 hover:text-foreground transition-colors border border-border dark:border-white/20 rounded-full px-4 py-1.5">
+          <Link href="/student" className="text-[13px] text-foreground/80 hover:text-foreground transition-colors border border-border dark:border-white/20 rounded-full px-4 py-1.5">
             学生の方へ
-          </a>
+          </Link>
           <Link href="https://app.boundai.tech/" className="text-[13px] bg-foreground text-background font-medium rounded-full px-4 py-1.5 hover:opacity-80 transition-colors">
             無料で作成
           </Link>
@@ -144,15 +144,13 @@ export default function Header() {
                 問合せ
               </Link>
               <div className="pt-3 space-y-2">
-                <a
-                  href="https://boundai.tech/student"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/student"
                   onClick={closeMobileMenu}
                   className="block text-center text-[15px] text-foreground/80 hover:text-foreground transition-colors border border-border dark:border-white/20 rounded-full px-4 py-2"
                 >
                   学生の方へ
-                </a>
+                </Link>
                 <Link
                   href="https://app.boundai.tech/"
                   onClick={closeMobileMenu}
