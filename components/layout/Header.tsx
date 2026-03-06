@@ -28,7 +28,7 @@ export default function Header() {
         <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image 
-              src="/Brand.svg" 
+              src="/contents/logos/brand.svg" 
               alt="BOUND" 
               width={100} 
               height={16} 

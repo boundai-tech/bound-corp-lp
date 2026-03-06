@@ -11,7 +11,7 @@ export const resources = [
     title: "夏インターンで終わらせない採用設計",
     date: "2025年7月9日",
     url: "https://note.com/bound_datact/n/ne34b10ce733f",
-    thumbnail: "/images/blog-summer-intern.png",
+    thumbnail: "/contents/blog/blog-summer-intern.png",
   },
   {
     type: "webinar",
@@ -25,6 +25,6 @@ export const resources = [
     title: "BOUND 学生向けローンチ",
     date: "2025年10月10日",
     url: "https://note.com/bound_datact/n/nc2211cee22a7?sub_rt=share_sb",
-    thumbnail: "/images/blog-student-launch.png",
+    thumbnail: "/contents/blog/blog-student-launch.png",
   },
 ];

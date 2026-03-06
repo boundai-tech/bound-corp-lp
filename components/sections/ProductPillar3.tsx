@@ -36,7 +36,7 @@ export default function ProductPillar3() {
           >
             <div className="w-full h-full rounded-[10px] overflow-hidden relative">
               <Image
-                src="/assets/screenshots/screening.gif"
+                src="/contents/screenshots/screening.gif"
                 alt="評価ランク・適性度・興味度を可視化するダッシュボード"
                 fill
                 className="object-cover"
@@ -76,7 +76,7 @@ export default function ProductPillar3() {
           >
             <div className="w-full aspect-[4/3] rounded-[10px] overflow-hidden relative">
               <Image
-                src="/assets/screenshots/screening.gif"
+                src="/contents/screenshots/screening.gif"
                 alt="評価ランク・適性度・興味度を可視化するダッシュボード"
                 fill
                 className="object-cover"

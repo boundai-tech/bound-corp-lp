@@ -36,7 +36,7 @@ export default function ProductPillar2() {
           >
             <div className="w-full h-full rounded-[10px] overflow-hidden relative">
               <Image
-                src="/assets/screenshots/highlight2-new.png"
+                src="/contents/screenshots/highlight2-new.png"
                 alt="インターンから内定まで切れ目のないエンゲージメント"
                 fill
                 className="object-cover"
@@ -75,7 +75,7 @@ export default function ProductPillar2() {
           >
             <div className="w-full aspect-[4/3] rounded-[10px] overflow-hidden relative">
               <Image
-                src="/assets/screenshots/highlight2-new.png"
+                src="/contents/screenshots/highlight2-new.png"
                 alt="インターンから内定まで切れ目のないエンゲージメント"
                 fill
                 className="object-cover"

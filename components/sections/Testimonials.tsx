@@ -27,7 +27,7 @@ export default function Testimonials() {
             <div className="w-full md:w-[320px] flex flex-col items-center md:items-start md:border-l border-border/50 md:pl-10">
               <div className="w-20 h-20 rounded-lg bg-border overflow-hidden mb-5 relative">
                 <Image
-                  src="/otsubo.png"
+                  src="/contents/testimonials/otsubo.png"
                   alt="大坪拓巳様"
                   width={80}
                   height={80}

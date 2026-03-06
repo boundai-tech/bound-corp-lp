@@ -19,7 +19,7 @@ export default function FinalCTA() {
                 </h2>
                 <div className="flex items-center justify-center">
                   <Image 
-                    src="/Brand.svg" 
+                    src="/contents/logos/brand.svg" 
                     alt="BOUND" 
                     width={160} 
                     height={32} 

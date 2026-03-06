@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="col-span-1">
             <Link href="/" className="inline-block mb-4">
               <Image 
-                src="/Brand.svg" 
+                src="/contents/logos/brand.svg" 
                 alt="BOUND" 
                 width={120} 
                 height={20} 

@@ -37,7 +37,7 @@ export default function ProductPillar1() {
             <div className="w-full h-full rounded-[10px] overflow-hidden relative">
               <div className="absolute inset-0 -left-[80px] w-[calc(100%+80px)] h-full">
                 <Image
-                  src="/assets/screenshots/highlight1.gif"
+                  src="/contents/screenshots/highlight1.gif"
                   alt="AIで仕事体験コンテンツを自動生成"
                   fill
                   className="object-cover object-left"
@@ -78,7 +78,7 @@ export default function ProductPillar1() {
           >
             <div className="w-full aspect-[4/3] rounded-[10px] overflow-hidden relative">
               <Image
-                src="/assets/screenshots/highlight1.gif"
+                src="/contents/screenshots/highlight1.gif"
                 alt="AIで仕事体験コンテンツを自動生成"
                 fill
                 className="object-cover object-[35%_center] md:object-left"

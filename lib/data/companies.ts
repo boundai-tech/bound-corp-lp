@@ -1,7 +1,7 @@
 export const companies = [
-  { name: "東京ガス", logo: "/assets/logos/tokyo-gas.svg" },
-  { name: "Cross Marketing", logo: "/assets/logos/cross-marketing.svg" },
-  { name: "Benesse", logo: "/assets/logos/benesse.svg" },
-  { name: "Johnson & Johnson", logo: "/assets/logos/jnj.svg" },
-  { name: "AstraZeneca", logo: "/assets/logos/astrazeneca.svg" },
+  { name: "東京ガス", logo: "/contents/logos/companies/tokyo-gas.svg" },
+  { name: "Cross Marketing", logo: "/contents/logos/companies/cross-marketing.svg" },
+  { name: "Benesse", logo: "/contents/logos/companies/benesse.svg" },
+  { name: "Johnson & Johnson", logo: "/contents/logos/companies/jnj.svg" },
+  { name: "AstraZeneca", logo: "/contents/logos/companies/astrazeneca.svg" },
 ];

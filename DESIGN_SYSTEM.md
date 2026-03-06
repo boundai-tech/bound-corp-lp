@@ -21,7 +21,7 @@ BOUND uses a dual-identity system to represent the equal partnership between com
 - **Usage**: Landing pages, marketing materials, anywhere emphasizing the partnership
 
 #### 2. Corporate Logo (Company-Focused)
-- **File**: `public/BOUNDcorporate.svg`
+- **File**: `public/contents/brand/BOUNDcorporate.svg`
 - **Color**: Solid `#0891B2` (Company Primary)
 - **Usage**:
   - Company-facing pages :white_check_mark:
