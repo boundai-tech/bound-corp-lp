@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import VideoPlayer from "@/components/ui/VideoPlayer";
-import YouTubeEmbed from "@/components/ui/YouTubeEmbed";
 import { videoUrls } from "@/lib/config/videos";
 import { staggerContainer, staggerItem } from "@/components/animations/variants";
 
