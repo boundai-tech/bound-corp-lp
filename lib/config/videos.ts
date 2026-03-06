@@ -1,13 +1,8 @@
 /**
- * Video URLs - use GitHub Releases for reliable hosting on Vercel
- * Create a release at: https://github.com/K0hei27/bound-lp/releases/new
- * Tag: v1.0.0, attach: hero-demo-4k.mp4, highlight1.mp4, screening.mp4
+ * Video URLs - hosted on Vercel Blob
  */
-const GITHUB_RELEASE_BASE =
-  "https://github.com/K0hei27/bound-lp/releases/download/v1.0.0";
-
 export const videoUrls = {
-  hero: `${GITHUB_RELEASE_BASE}/hero-demo-4k.mp4`,
-  highlight1: `${GITHUB_RELEASE_BASE}/highlight1.mp4`,
-  screening: `${GITHUB_RELEASE_BASE}/screening.mp4`,
+  hero: "https://pwtcdhn5zfrne8a2.public.blob.vercel-storage.com/hero-demo-4k.mp4",
+  highlight1: "https://pwtcdhn5zfrne8a2.public.blob.vercel-storage.com/highlight1.mp4",
+  screening: "https://pwtcdhn5zfrne8a2.public.blob.vercel-storage.com/screening.mp4",
 };
