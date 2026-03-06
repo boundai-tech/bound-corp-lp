@@ -29,6 +29,19 @@ export default function Home() {
             <ProductPillar1 />
             <ProductPillar2 />
             <ProductPillar3 />
+            <div className="flex justify-center">
+              <a
+                href="https://youtu.be/K0rqZ0M1rQg?si=GaKFzrrHqAuK70Oc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-foreground/20 text-foreground/80 hover:border-[#0891B2] hover:text-[#0891B2] transition-all text-sm font-medium"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+                デモ動画を見る
+              </a>
+            </div>
           </div>
         </section>
         <HowItWorks />

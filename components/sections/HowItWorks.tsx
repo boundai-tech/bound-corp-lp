@@ -29,16 +29,16 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 px-4 md:px-6">
+    <section className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 md:px-6">
       <div className="max-w-[1200px] mx-auto flex flex-col items-center">
         <ScrollReveal>
-          <h2 className="text-[22px] md:text-[26px] font-semibold text-foreground/90 text-center mb-2 leading-tight tracking-tight">
+          <h2 className="text-[18px] sm:text-[22px] md:text-[26px] font-semibold text-foreground/90 text-center mb-2 leading-tight tracking-tight">
             4ステップで公開
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <p className="text-[14px] md:text-[15px] text-foreground/60 text-center mb-10 md:mb-14 lg:mb-16 max-w-xl mx-auto">
+          <p className="text-[12px] sm:text-[14px] md:text-[15px] text-foreground/60 text-center mb-6 sm:mb-10 md:mb-14 lg:mb-16 max-w-xl mx-auto">
             AIが自動生成するから、工数をかけずに質の高いジョブ体験を提供できます。
           </p>
         </ScrollReveal>
@@ -48,15 +48,17 @@ export default function HowItWorks() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 w-full"
         >
           {steps.map((step, index) => (
-            <motion.div key={index} variants={staggerItem} className="relative p-5 md:p-6 rounded-xl border border-border bg-surface shadow-sm">
-              <div className="w-8 h-8 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm mb-3 md:mb-4">
+            <motion.div key={index} variants={staggerItem} className="relative p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl border border-border bg-surface shadow-sm flex sm:block items-start gap-4">
+              <div className="w-8 h-8 sm:w-8 sm:h-8 rounded-full bg-foreground text-background flex items-center justify-center font-bold text-sm flex-shrink-0 sm:mb-3 md:mb-4">
                 {step.number}
               </div>
-              <h3 className="text-[15px] md:text-base font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-[13px] md:text-sm text-foreground/60 leading-relaxed">{step.description}</p>
+              <div className="flex-1 sm:flex-none">
+                <h3 className="text-[14px] sm:text-[15px] md:text-base font-bold text-foreground mb-1 sm:mb-2">{step.title}</h3>
+                <p className="text-[12px] sm:text-[13px] md:text-sm text-foreground/60 leading-relaxed">{step.description}</p>
+              </div>
             </motion.div>
           ))}
         </motion.div>

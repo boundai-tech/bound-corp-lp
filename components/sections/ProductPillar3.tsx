@@ -35,13 +35,13 @@ export default function ProductPillar3() {
             className="w-full h-full"
           >
             <div className="w-full h-full rounded-[10px] overflow-hidden relative">
-              <Image
-                src="/contents/screenshots/screening.gif"
-                alt="評価ランク・適性度・興味度を可視化するダッシュボード"
-                fill
-                className="object-cover"
-                sizes="840px"
-                unoptimized
+              <video
+                src="/contents/screenshots/screening.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
               />
             </div>
           </motion.div>
@@ -51,22 +51,22 @@ export default function ProductPillar3() {
       {/* Mobile: Stacked layout */}
       <div className="xl:hidden flex flex-col">
         {/* Text Content */}
-        <div className="p-6 md:p-8 space-y-4">
+        <div className="px-4 pt-5 pb-3 sm:p-6 md:p-8 space-y-2 sm:space-y-4">
           <ScrollReveal>
-            <h2 className="text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
+            <h2 className="text-[16px] sm:text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
               結果だけでなく、<span className="text-[#0891B2]">プロセス</span>で評価
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
-            <p className="text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
+            <p className="text-[13px] sm:text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
               思考力、AI活用力、取り組み姿勢を定量化。入社後に本当に活躍する人材を、フェアに見極めます。
             </p>
           </ScrollReveal>
         </div>
 
         {/* Image */}
-        <div className="p-4 md:p-6">
+        <div className="px-3 pb-3 sm:p-4 md:p-6">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -74,14 +74,14 @@ export default function ProductPillar3() {
             variants={scaleIn}
             className="w-full"
           >
-            <div className="w-full aspect-[4/3] rounded-[10px] overflow-hidden relative">
-              <Image
-                src="/contents/screenshots/screening.gif"
-                alt="評価ランク・適性度・興味度を可視化するダッシュボード"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 840px"
-                unoptimized
+            <div className="w-full aspect-[16/10] sm:aspect-[4/3] rounded-lg sm:rounded-[10px] overflow-hidden relative">
+              <video
+                src="/contents/screenshots/screening.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
               />
             </div>
           </motion.div>

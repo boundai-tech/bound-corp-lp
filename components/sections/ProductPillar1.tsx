@@ -36,13 +36,13 @@ export default function ProductPillar1() {
           >
             <div className="w-full h-full rounded-[10px] overflow-hidden relative">
               <div className="absolute inset-0 -left-[80px] w-[calc(100%+80px)] h-full">
-                <Image
-                  src="/contents/screenshots/highlight1.gif"
-                  alt="AIで仕事体験コンテンツを自動生成"
-                  fill
-                  className="object-cover object-left"
-                  sizes="938px"
-                  unoptimized
+                <video
+                  src="/contents/screenshots/highlight1.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover object-left"
                 />
               </div>
             </div>
@@ -53,22 +53,22 @@ export default function ProductPillar1() {
       {/* Mobile: Stacked layout */}
       <div className="xl:hidden flex flex-col">
         {/* Text Content */}
-        <div className="p-6 md:p-8 space-y-4">
+        <div className="px-4 pt-5 pb-3 sm:p-6 md:p-8 space-y-2 sm:space-y-4">
           <ScrollReveal>
-            <h2 className="text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
+            <h2 className="text-[16px] sm:text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
               AIで実務体験を<span className="text-[#0891B2]">30分</span>で作成
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
-            <p className="text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
+            <p className="text-[13px] sm:text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
               入力だけで、自社の魅力が伝わるジョブ体験を自動生成。従来2ヶ月かかっていた設計を、現場の負担なく実現します。
             </p>
           </ScrollReveal>
         </div>
 
         {/* Image */}
-        <div className="p-4 md:p-6">
+        <div className="px-3 pb-3 sm:p-4 md:p-6">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -76,14 +76,14 @@ export default function ProductPillar1() {
             variants={scaleIn}
             className="w-full"
           >
-            <div className="w-full aspect-[4/3] rounded-[10px] overflow-hidden relative">
-              <Image
-                src="/contents/screenshots/highlight1.gif"
-                alt="AIで仕事体験コンテンツを自動生成"
-                fill
-                className="object-cover object-[35%_center] md:object-left"
-                sizes="(max-width: 768px) 100vw, 840px"
-                unoptimized
+            <div className="w-full aspect-[16/10] sm:aspect-[4/3] rounded-lg sm:rounded-[10px] overflow-hidden relative">
+              <video
+                src="/contents/screenshots/highlight1.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover object-[35%_center] md:object-left"
               />
             </div>
           </motion.div>

@@ -35,10 +35,10 @@ export default function Resources() {
   ];
 
   return (
-    <section id="resources" className="py-16 md:py-24 lg:py-32 px-4 md:px-6">
+    <section id="resources" className="py-12 sm:py-16 md:py-24 lg:py-32 px-4 md:px-6">
       <div className="max-w-[1200px] mx-auto flex flex-col items-center">
         <ScrollReveal>
-          <h2 className="text-[22px] md:text-[26px] font-semibold text-foreground/90 text-center mb-10 md:mb-14 lg:mb-16 leading-tight tracking-tight">
+          <h2 className="text-[18px] sm:text-[22px] md:text-[26px] font-semibold text-foreground/90 text-center mb-6 sm:mb-10 md:mb-14 lg:mb-16 leading-tight tracking-tight">
             採用の現場から、リアルな知見を
           </h2>
         </ScrollReveal>
@@ -53,7 +53,7 @@ export default function Resources() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.3 }}
-                className="grid grid-cols-2 gap-4 md:gap-6"
+                className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6"
               >
                 {visibleResources.map((resource, index) => (
                   <a
@@ -77,8 +77,8 @@ export default function Resources() {
                       </div>
 
                       {/* コンテンツ */}
-                      <div className="p-4 md:p-5">
-                        <div className={`mb-2 md:mb-3 inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium border w-fit ${
+                      <div className="p-3 sm:p-4 md:p-5">
+                        <div className={`mb-2 inline-flex items-center px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md text-[10px] sm:text-xs font-medium border w-fit ${
                           resource.type === "blog"
                             ? "bg-foreground/5 text-foreground/60 border-border"
                             : "bg-[#0891B2]/10 text-[#0891B2] border-[#0891B2]/20"
@@ -86,11 +86,11 @@ export default function Resources() {
                           {resource.type === "blog" ? "ブログ" : "ウェビナー"}
                         </div>
 
-                        <h3 className="text-sm md:text-base lg:text-lg font-semibold text-foreground mb-2 leading-tight group-hover:text-foreground/80 transition-colors line-clamp-2">
+                        <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-foreground mb-1.5 sm:mb-2 leading-tight group-hover:text-foreground/80 transition-colors line-clamp-2">
                           {resource.title}
                         </h3>
 
-                        <p className="text-foreground/40 text-xs md:text-sm">{resource.date}</p>
+                        <p className="text-foreground/40 text-[10px] sm:text-xs md:text-sm">{resource.date}</p>
                       </div>
                     </Card>
                   </a>
