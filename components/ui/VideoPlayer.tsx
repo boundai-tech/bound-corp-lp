@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 interface VideoPlayerProps {
   /** 動画のURL。空の場合は fallback を表示 */
@@ -19,7 +19,7 @@ interface VideoPlayerProps {
 
 /**
  * autoPlay muted loop playsInline でその場で再生する動画プレイヤー
- * 読み込み失敗時は fallback を表示
+ * ネットワークエラー時のみ fallback を表示
  */
 export default function VideoPlayer({
   src,
@@ -31,6 +31,22 @@ export default function VideoPlayer({
   videoClassName = "w-full h-full object-cover",
 }: VideoPlayerProps) {
   const [hasError, setHasError] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleError = () => {
+      // Only trigger fallback for actual network errors (4xx, 5xx)
+      if (video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) {
+        setHasError(true);
+      }
+    };
+
+    video.addEventListener("error", handleError);
+    return () => video.removeEventListener("error", handleError);
+  }, [src]);
 
   if (!src || hasError) {
     return <>{fallback}</>;
@@ -45,6 +61,7 @@ export default function VideoPlayer({
   return (
     <div className={wrapperClass} style={wrapperStyle}>
       <video
+        ref={videoRef}
         src={src}
         title={title}
         autoPlay
@@ -52,7 +69,6 @@ export default function VideoPlayer({
         loop
         playsInline
         className={videoClassName}
-        onError={() => setHasError(true)}
       />
     </div>
   );
