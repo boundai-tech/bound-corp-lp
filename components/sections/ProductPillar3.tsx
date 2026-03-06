@@ -1,0 +1,92 @@
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
+import ScrollReveal from "@/components/ui/ScrollReveal";
+import { scaleIn } from "@/components/animations/variants";
+
+export default function ProductPillar3() {
+  return (
+    <div className="w-full bg-[#f2f1ed] dark:bg-[#1a1a1a] rounded-[4px] border border-[rgba(0,0,0,0.03)] dark:border-[rgba(255,255,255,0.03)] overflow-hidden">
+      {/* Desktop: Side by side layout */}
+      <div className="hidden xl:block relative h-[685px]">
+        {/* Text Content - Left Side */}
+        <div className="absolute left-[30px] top-[265px] w-[382.5px] space-y-[14px]">
+          <ScrollReveal>
+            <h2 className="text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
+              結果だけでなく、<span className="text-[#0891B2]">プロセス</span>で評価
+            </h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <p className="text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
+              思考力、AI活用力、取り組み姿勢を定量化。入社後に本当に活躍する人材を、フェアに見極めます。
+            </p>
+          </ScrollReveal>
+        </div>
+
+        {/* Image - Right Side */}
+        <div className="absolute right-[17.5px] top-[17.5px] w-[840px] h-[650px] rounded-[4px] overflow-hidden">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={scaleIn}
+            className="w-full h-full"
+          >
+            <div className="w-full h-full rounded-[10px] overflow-hidden relative">
+              <Image
+                src="/assets/screenshots/screening.gif"
+                alt="評価ランク・適性度・興味度を可視化するダッシュボード"
+                fill
+                className="object-cover"
+                sizes="840px"
+                unoptimized
+              />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Mobile: Stacked layout */}
+      <div className="xl:hidden flex flex-col">
+        {/* Text Content */}
+        <div className="p-6 md:p-8 space-y-4">
+          <ScrollReveal>
+            <h2 className="text-[18px] md:text-[22px] font-semibold text-foreground leading-[1.4] tracking-tight">
+              結果だけでなく、<span className="text-[#0891B2]">プロセス</span>で評価
+            </h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <p className="text-[14px] md:text-[15px] text-foreground/60 leading-[1.6]">
+              思考力、AI活用力、取り組み姿勢を定量化。入社後に本当に活躍する人材を、フェアに見極めます。
+            </p>
+          </ScrollReveal>
+        </div>
+
+        {/* Image */}
+        <div className="p-4 md:p-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={scaleIn}
+            className="w-full"
+          >
+            <div className="w-full aspect-[4/3] rounded-[10px] overflow-hidden relative">
+              <Image
+                src="/assets/screenshots/screening.gif"
+                alt="評価ランク・適性度・興味度を可視化するダッシュボード"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 840px"
+                unoptimized
+              />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  );
+}
