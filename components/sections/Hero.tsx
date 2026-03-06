@@ -1,8 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { videoUrls } from "@/lib/config/videos";
 import Link from "next/link";
+import VideoPlayer from "@/components/ui/VideoPlayer";
+import YouTubeEmbed from "@/components/ui/YouTubeEmbed";
+import { videoUrls } from "@/lib/config/videos";
 import { staggerContainer, staggerItem } from "@/components/animations/variants";
 
 export default function Hero() {
@@ -64,13 +66,11 @@ export default function Hero() {
           
           <div className="relative rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl shadow-black/20 dark:shadow-black/50 border border-border/50 bg-surface">
             <div className="overflow-hidden" style={{ marginLeft: '-6%', marginRight: '-6%', width: '112%' }}>
-              <video
+              <VideoPlayer
                 src={videoUrls.hero}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-auto"
+                title="BOUND デモ動画"
+                videoClassName="w-full h-auto"
+                fallback={<YouTubeEmbed videoId="q04fcKvjre8" title="BOUND デモ動画" />}
               />
             </div>
           </div>
