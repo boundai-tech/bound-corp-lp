@@ -6,6 +6,14 @@ const nextConfig = {
       new URL('https://assets.st-note.com/**'),
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/navigator/:path*',
+        destination: 'https://boundai.framer.website/navigator/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
