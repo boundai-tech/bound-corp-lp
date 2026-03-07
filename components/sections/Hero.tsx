@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { staggerContainer, staggerItem } from "@/components/animations/variants";
+import { getVideoUrl } from "@/lib/config/videos";
 
 export default function Hero() {
   return (
@@ -65,7 +66,7 @@ export default function Hero() {
           <div className="relative rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl shadow-black/20 dark:shadow-black/50 border border-border/50 bg-surface">
             <div className="overflow-hidden" style={{ marginLeft: '-6%', marginRight: '-6%', width: '112%' }}>
               <video
-                src="/contents/screenshots/hero-demo-4k.mp4"
+                src={getVideoUrl("hero")}
                 autoPlay
                 muted
                 loop
