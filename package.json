@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
+    "postinstall": "git lfs pull || true",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
