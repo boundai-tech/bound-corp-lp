@@ -32,9 +32,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/student" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
+                <a href="https://boundai.tech/student" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
                   学生向けページ
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
