@@ -12,6 +12,14 @@ const nextConfig = {
         source: '/navigator/:path*',
         destination: 'https://boundai.framer.website/navigator/:path*',
       },
+      {
+        source: '/student',
+        destination: 'https://student-landing-page-two.vercel.app/',
+      },
+      {
+        source: '/student/:path*',
+        destination: 'https://student-landing-page-two.vercel.app/:path*',
+      },
     ];
   },
 };
