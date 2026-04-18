@@ -12,13 +12,19 @@ const nextConfig = {
         source: '/navigator/:path*',
         destination: 'https://boundai.framer.website/navigator/:path*',
       },
+    ];
+  },
+  async redirects() {
+    return [
       {
         source: '/student',
         destination: 'https://student-landing-page-two.vercel.app/',
+        permanent: false,
       },
       {
         source: '/student/:path*',
         destination: 'https://student-landing-page-two.vercel.app/:path*',
+        permanent: false,
       },
     ];
   },
