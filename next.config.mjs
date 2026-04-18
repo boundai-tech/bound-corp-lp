@@ -18,12 +18,12 @@ const nextConfig = {
     return [
       {
         source: '/student',
-        destination: 'https://student-landing-page-two.vercel.app/',
+        destination: 'https://student.boundai.tech/',
         permanent: false,
       },
       {
         source: '/student/:path*',
-        destination: 'https://student-landing-page-two.vercel.app/:path*',
+        destination: 'https://student.boundai.tech/:path*',
         permanent: false,
       },
     ];

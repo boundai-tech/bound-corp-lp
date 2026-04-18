@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "自社のビジネス課題を実務に近いジョブチャレンジとして開放し、学生のアウトプットを通じてスキル・志向・フィット感を可視化する採用プラットフォーム。",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/contents/logos/favicon.svg",
   },
 };
 
