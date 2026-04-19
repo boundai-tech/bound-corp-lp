@@ -37,7 +37,7 @@ export const pricingPlans = [
   },
   {
     name: "プレミアム",
-    price: "¥91,700",
+    price: "¥149,000",
     priceUnit: "/月",
     subPrice: "6ヶ月契約",
     description: "学生のスキル評価を本格導入したい方",
