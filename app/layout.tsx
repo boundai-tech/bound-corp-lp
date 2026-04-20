@@ -3,9 +3,9 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BOUND - 実務体験ジョブチャレンジで採用を変革",
+  title: "BOUND クリエーター | 実務体験ジョブチャレンジで採用を変革",
   description:
-    "自社のビジネス課題を実務に近いジョブチャレンジとして開放し、学生のアウトプットを通じてスキル・志向・フィット感を可視化する採用プラットフォーム。",
+    "書類・面接だけでは見えない「本当の実力」を見極める。自社の実務課題をジョブチャレンジとして公開し、学生のアウトプットからスキル・志向・フィット感を可視化する新しい採用体験。",
   icons: {
     icon: "/contents/logos/favicon.svg",
   },
