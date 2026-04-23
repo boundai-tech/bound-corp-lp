@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { scaleIn } from "@/components/animations/variants";
 import { getVideoUrl } from "@/lib/config/videos";
+import AutoplayVideo from "@/components/ui/AutoplayVideo";
 
 export default function ProductPillar1() {
   return (
@@ -69,24 +70,12 @@ export default function ProductPillar1() {
 
         {/* Video */}
         <div className="px-3 pb-3 sm:p-4 md:p-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={scaleIn}
-            className="w-full"
-          >
-            <div className="w-full aspect-[16/10] sm:aspect-[4/3] rounded-lg sm:rounded-[10px] overflow-hidden relative">
-              <video
-                src={getVideoUrl("highlight1")}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover object-[35%_center] md:object-left"
-              />
-            </div>
-          </motion.div>
+          <div className="w-full aspect-[16/10] sm:aspect-[4/3] rounded-lg sm:rounded-[10px] overflow-hidden relative">
+            <AutoplayVideo
+              src={getVideoUrl("highlight1")}
+              className="w-full h-full object-cover object-[35%_center] md:object-left"
+            />
+          </div>
         </div>
       </div>
     </div>

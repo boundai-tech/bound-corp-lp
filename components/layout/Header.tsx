@@ -38,7 +38,9 @@ export default function Header() {
     >
       <div className="w-full px-4 md:px-6 h-14 flex items-center justify-between">
         <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center">
+          {/* モバイル：左スペーサー（ロゴを中央に） */}
+          <div className="md:hidden w-8" />
+          <Link href="/" className="flex items-center md:flex-none absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
             <Image 
               src="/contents/logos/brand.svg" 
               alt="BOUND" 

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { scaleIn } from "@/components/animations/variants";
 import { getVideoUrl } from "@/lib/config/videos";
+import AutoplayVideo from "@/components/ui/AutoplayVideo";
 
 export default function ProductPillar3() {
   return (
@@ -67,25 +68,12 @@ export default function ProductPillar3() {
 
         {/* Video */}
         <div className="px-3 pb-3 sm:p-4 md:p-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "0px" }}
-            variants={scaleIn}
-            className="w-full"
-          >
-            <div className="w-full aspect-[16/10] sm:aspect-[4/3] rounded-lg sm:rounded-[10px] overflow-hidden relative bg-foreground/5">
-              <video
-                src={getVideoUrl("screening")}
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="auto"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </motion.div>
+          <div className="w-full aspect-[16/10] sm:aspect-[4/3] rounded-lg sm:rounded-[10px] overflow-hidden relative">
+            <AutoplayVideo
+              src={getVideoUrl("screeningMobile")}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>

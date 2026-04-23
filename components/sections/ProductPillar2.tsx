@@ -23,6 +23,20 @@ export default function ProductPillar2() {
               企業の実際の業務データや意思決定をもとに、自社ならではのジョブ体験を提供。単なるワークではなく、リアルな仕事の面白さを伝えます。
             </p>
           </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <a
+              href="https://student.boundai.tech/#challenges"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[13px] font-medium text-[#0891B2] hover:text-[#0891B2]/70 transition-colors duration-150"
+            >
+              学生に公開中のチャレンジを見る
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
+          </ScrollReveal>
         </div>
 
         {/* Image - Left Side */}
@@ -62,27 +76,33 @@ export default function ProductPillar2() {
               企業の実際の業務データや意思決定をもとに、自社ならではのジョブ体験を提供。単なるワークではなく、リアルな仕事の面白さを伝えます。
             </p>
           </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <a
+              href="https://student.boundai.tech/#challenges"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[13px] font-medium text-[#0891B2] hover:text-[#0891B2]/70 transition-colors duration-150"
+            >
+              学生に公開中のチャレンジを見る
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
+          </ScrollReveal>
         </div>
 
         {/* Image */}
         <div className="p-4 md:p-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={scaleIn}
-            className="w-full"
-          >
-            <div className="w-full aspect-[4/3] rounded-[10px] overflow-hidden relative">
-              <Image
-                src="/contents/screenshots/highlight2-new.png"
-                alt="学生がやってみたいと思うリアル課題"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 840px"
-              />
-            </div>
-          </motion.div>
+          <div className="w-full aspect-[4/3] rounded-[10px] overflow-hidden relative">
+            <Image
+              src="/contents/screenshots/highlight2-new.png"
+              alt="学生がやってみたいと思うリアル課題"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 840px"
+            />
+          </div>
         </div>
       </div>
     </div>

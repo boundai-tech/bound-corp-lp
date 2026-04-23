@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { staggerContainer, staggerItem } from "@/components/animations/variants";
 import { getVideoUrl } from "@/lib/config/videos";
+import AutoplayVideo from "@/components/ui/AutoplayVideo";
 
 export default function Hero() {
   return (
-    <section className="relative pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-10 md:pb-12 px-4 md:px-6 flex flex-col items-center">
+    <section className="relative pt-24 sm:pt-28 md:pt-32 pb-8 sm:pb-10 md:pb-12 px-4 md:px-6 flex flex-col items-center">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -71,13 +72,8 @@ export default function Hero() {
           
           <div className="relative rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl shadow-black/20 dark:shadow-black/50 border border-border/50 bg-surface">
             <div className="overflow-hidden" style={{ marginLeft: '-6%', marginRight: '-6%', width: '112%' }}>
-              <video
+              <AutoplayVideo
                 src={getVideoUrl("hero")}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
                 className="w-full h-auto"
               />
             </div>
