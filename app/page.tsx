@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import MobileStickyFooter from "@/components/layout/MobileStickyFooter";
 import Hero from "@/components/sections/Hero";
 import SocialProof from "@/components/sections/SocialProof";
 import Problem from "@/components/sections/Problem";
@@ -19,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="pb-20 md:pb-0">
         <Hero />
         <SocialProof />
         <Problem />
@@ -40,6 +41,7 @@ export default function Home() {
         <FinalCTA />
       </main>
       <Footer />
+      <MobileStickyFooter />
     </>
   );
 }

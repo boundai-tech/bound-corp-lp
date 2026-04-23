@@ -4,10 +4,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "@/components/ui/ThemeToggle";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -19,7 +27,11 @@ export default function Header() {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 dark:bg-black/50 backdrop-blur-md border-b border-border dark:border-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 md:bg-background/80 md:dark:bg-black/50 md:backdrop-blur-md md:border-border md:dark:border-transparent ${
+        scrolled
+          ? "bg-background/80 dark:bg-black/50 backdrop-blur-md border-border dark:border-transparent"
+          : "bg-transparent border-transparent"
+      }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
